@@ -1,20 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/application.js"></script>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
   </head>
   <body>
+    <div class="container">
+      <h1 class="text-center">Shopping Cart</h1>
 
+      <div class="row">
+        <div class="col-12">
+          <table class="table table-responsive bg-primary">
+            <thead>
+              <tr>
+                <th scope="col">Item name</th>
+                <th scope="col">Item price</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+
+        <form class="col-12 form-inline" id="addItem">
+          <input
+            name="name"
+            type="text"
+            placeholder="Item name"
+            class="form-control"
+          />
+          <input
+            name="itemPrice"
+            type="number"
+            placeholder="Item price"
+            class="form-control"
+          />
+          <input
+            name="quantity"
+            type="number"
+            placeholder="Quantity"
+            class="form-control"
+          />
+          <button type="submit" class="btn btn-success add">Add</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
