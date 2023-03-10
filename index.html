@@ -11,7 +11,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/application.js"></script>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet" /> -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
     <link href="css/custom.css" rel="stylesheet" />
   </head>
   <body>
@@ -20,21 +26,40 @@
 
       <div class="row">
         <div class="col-12">
-          <table class="table table-responsive bg-primary">
-            <thead>
+          <table class="table">
+            <thead class="bg-primary text-light">
               <tr>
-                <th scope="col">Item name</th>
-                <th scope="col">Item price</th>
-                <th scope="col">Quantity</th>
-                <th scope="col">Price</th>
+                <th>Item name</th>
+                <th>Item price</th>
+                <th>Item quantity</th>
+                <th>Price</th>
               </tr>
             </thead>
+
+            <tbody>
+              <tr>
+                <td class="itemName">Salmon</th>
+                <td class="itemPrice">$60.00</td>
+                <td class="itemQuantity d-flex align-items-center">
+                  <input type="number" value="0" class="form-control form-control-sm mr-2" />
+                  <button class="btn btn-danger btn-sm remove">Remove</button>
+                </td>
+                <td class="price"></td>
+              </tr>
+            </tbody>
           </table>
         </div>
 
         <form class="col-12 form-inline" id="addItem">
+          <input name="itemName" type="text" placeholder="Item name" class="form-control form-control-sm mr-2" />
+          <input name="itemPrice" type="number" placeholder="Item price" class="form-control form-control-sm mr-2" />
+          <button type="submit" class="btn btn-success btn-sm">Add</button>
+        </form>
+      </div>
+
+      <!-- <form class="col-12 form-inline" id="addItem">
           <input
-            name="name"
+            name="itemName"
             type="text"
             placeholder="Item name"
             class="form-control"
@@ -45,15 +70,8 @@
             placeholder="Item price"
             class="form-control"
           />
-          <input
-            name="quantity"
-            type="number"
-            placeholder="Quantity"
-            class="form-control"
-          />
           <button type="submit" class="btn btn-success add">Add</button>
-        </form>
-      </div>
+        </form> -->
     </div>
   </body>
 </html>
