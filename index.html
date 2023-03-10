@@ -41,7 +41,7 @@
                 <td class="itemName">Salmon</th>
                 <td class="itemPrice">$60.00</td>
                 <td class="itemQuantity d-flex align-items-center">
-                  <input type="number" value="0" class="form-control form-control-sm mr-2" />
+                  <input type="number" value="1" class="form-control form-control-sm mr-2" />
                   <button class="btn btn-danger btn-sm remove">Remove</button>
                 </td>
                 <td class="price"></td>
@@ -55,6 +55,10 @@
           <input name="itemPrice" type="number" placeholder="Item price" class="form-control form-control-sm mr-2" />
           <button type="submit" class="btn btn-success btn-sm">Add</button>
         </form>
+
+        <div class="col-12 mt-3">
+          <h3>Total price: $ <span id="totalPrice"></span></h3>
+        </div>
       </div>
 
       <!-- <form class="col-12 form-inline" id="addItem">
